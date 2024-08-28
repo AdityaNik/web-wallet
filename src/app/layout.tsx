@@ -41,8 +41,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Toaster />
           <div className="lg:mx-60 mx-32">
-            <Toaster />
             <Navbar></Navbar>
             {children}
           </div>
