@@ -178,9 +178,7 @@ const EthereumWallet = () => {
                   <Copy
                     size={15}
                     onClick={() => {
-                      toast("Copied", {
-                        description: "Address",
-                      });
+                      toast("Copied to clipboard");
                       navigator.clipboard.writeText(
                         publicKey[selectedWallet - 1]
                       );

@@ -137,9 +137,7 @@ const SolanaWallet = () => {
                   />
                   <Copy
                     onClick={() => {
-                      toast("Copied", {
-                        description: "Address",
-                      });
+                      toast("Copied to clipboard");
                       navigator.clipboard.writeText(
                         publicKey[selectedWallet - 1].toBase58()
                       );
